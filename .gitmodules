@@ -1,0 +1,3 @@
+[submodule "dhcptest"]
+	path = dhcptest
+	url = git@github.com:CyberShadow/dhcptest.git
