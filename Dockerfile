@@ -23,7 +23,7 @@ LABEL maintainer="Alex Indigo <iam@alexindigo.com>"
 ENV PATH="$PATH:/usr/bin/"
 
 COPY --from=build /dhcptest/dhcptest /usr/bin/
-
 RUN dhcptest --help
 
-CMD [ "/usr/bin/dhcptest" ]
+RUN apt update
+RUN apt install -y dhcping dhcpdump
